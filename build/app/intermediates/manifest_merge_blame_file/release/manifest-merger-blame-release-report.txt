@@ -1,0 +1,292 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.wight.civicalerts"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:2:5-66
+11-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:2:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:3:5-79
+12-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:3:22-76
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:4:5-81
+13-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:4:22-78
+14    <!--
+15         Required to query activities that can process text, see:
+16         https://developer.android.com/training/package-visibility and
+17         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+18
+19         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+20    -->
+21    <queries>
+21-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:45:5-50:15
+22        <intent>
+22-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:46:9-49:18
+23            <action android:name="android.intent.action.PROCESS_TEXT" />
+23-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:47:13-72
+23-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:47:21-70
+24
+25            <data android:mimeType="text/plain" />
+25-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:48:13-50
+25-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:48:19-48
+26        </intent>
+27        <!-- Needs to be explicitly declared on Android R+ -->
+28        <package android:name="com.google.android.apps.maps" />
+28-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\cheta\.gradle\caches\transforms-3\8bbca67cc5a32c5ad0e6edc351921bed\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+28-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\cheta\.gradle\caches\transforms-3\8bbca67cc5a32c5ad0e6edc351921bed\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+29    </queries>
+30    <!-- Include required permissions for Google Maps API to run. -->
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\cheta\.gradle\caches\transforms-3\8bbca67cc5a32c5ad0e6edc351921bed\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
+31-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\cheta\.gradle\caches\transforms-3\8bbca67cc5a32c5ad0e6edc351921bed\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:22-76
+32
+33    <uses-feature
+33-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\cheta\.gradle\caches\transforms-3\8bbca67cc5a32c5ad0e6edc351921bed\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+34        android:glEsVersion="0x00020000"
+34-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\cheta\.gradle\caches\transforms-3\8bbca67cc5a32c5ad0e6edc351921bed\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+35        android:required="true" />
+35-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\cheta\.gradle\caches\transforms-3\8bbca67cc5a32c5ad0e6edc351921bed\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+36
+37    <permission
+37-->[androidx.core:core:1.13.1] C:\Users\cheta\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+38        android:name="com.wight.civicalerts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+38-->[androidx.core:core:1.13.1] C:\Users\cheta\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+39        android:protectionLevel="signature" />
+39-->[androidx.core:core:1.13.1] C:\Users\cheta\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+40
+41    <uses-permission android:name="com.wight.civicalerts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+41-->[androidx.core:core:1.13.1] C:\Users\cheta\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+41-->[androidx.core:core:1.13.1] C:\Users\cheta\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+42
+43    <application
+44        android:name="android.app.Application"
+44-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:7:9-42
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.13.1] C:\Users\cheta\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+46        android:extractNativeLibs="true"
+47        android:icon="@mipmap/ic_launcher"
+47-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:8:9-43
+48        android:label="civicalerts" >
+48-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:6:9-36
+49        <activity
+49-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:10:9-31:20
+50            android:name="com.wight.civicalerts.MainActivity"
+50-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:11:13-41
+51            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+51-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:16:13-163
+52            android:exported="true"
+52-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:12:13-36
+53            android:hardwareAccelerated="true"
+53-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:17:13-47
+54            android:launchMode="singleTop"
+54-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:13:13-43
+55            android:taskAffinity=""
+55-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:14:13-36
+56            android:theme="@style/LaunchTheme"
+56-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:15:13-47
+57            android:windowSoftInputMode="adjustResize" >
+57-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:18:13-55
+58
+59            <!--
+60                 Specifies an Android theme to apply to this Activity as soon as
+61                 the Android process has started. This theme is visible to the user
+62                 while the Flutter UI initializes. After that, this theme continues
+63                 to determine the Window background behind the Flutter UI.
+64            -->
+65            <meta-data
+65-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:23:13-26:17
+66                android:name="io.flutter.embedding.android.NormalTheme"
+66-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:24:15-70
+67                android:resource="@style/NormalTheme" />
+67-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:25:15-52
+68
+69            <intent-filter>
+69-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:27:13-30:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:28:17-68
+70-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:28:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:29:17-76
+72-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:29:27-74
+73            </intent-filter>
+74        </activity>
+75        <!--
+76             Don't delete the meta-data below.
+77             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+78        -->
+79        <meta-data
+79-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:34:9-36:33
+80            android:name="flutterEmbedding"
+80-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:35:13-44
+81            android:value="2" />
+81-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:36:13-30
+82        <meta-data
+82-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:37:9-38:70
+83            android:name="com.google.android.geo.API_KEY"
+83-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:37:20-65
+84            android:value="AIzaSyCRG2kQgNrjgM8pOeoJ3Fi9QFcuy0eVokc" />
+84-->D:\andriod studio project\CivicAlerts\android\app\src\main\AndroidManifest.xml:38:13-68
+85
+86        <provider
+86-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:9-17:20
+87            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+87-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-82
+88            android:authorities="com.wight.civicalerts.flutter.image_provider"
+88-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+89            android:exported="false"
+89-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+90            android:grantUriPermissions="true" >
+90-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-47
+91            <meta-data
+91-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-16:75
+92                android:name="android.support.FILE_PROVIDER_PATHS"
+92-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:15:17-67
+93                android:resource="@xml/flutter_image_picker_file_paths" />
+93-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-72
+94        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+95        <service
+95-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-31:19
+96            android:name="com.google.android.gms.metadata.ModuleDependencies"
+96-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-78
+97            android:enabled="false"
+97-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-36
+98            android:exported="false" >
+98-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-37
+99            <intent-filter>
+99-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-26:29
+100                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+100-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:25:17-94
+100-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:25:25-91
+101            </intent-filter>
+102
+103            <meta-data
+103-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-30:36
+104                android:name="photopicker_activity:0:required"
+104-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-63
+105                android:value="" />
+105-->[:image_picker_android] D:\andriod studio project\CivicAlerts\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:30:17-33
+106        </service>
+107        <service
+107-->[:geolocator_android] D:\andriod studio project\CivicAlerts\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-12:56
+108            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+108-->[:geolocator_android] D:\andriod studio project\CivicAlerts\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-77
+109            android:enabled="true"
+109-->[:geolocator_android] D:\andriod studio project\CivicAlerts\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-35
+110            android:exported="false"
+110-->[:geolocator_android] D:\andriod studio project\CivicAlerts\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-37
+111            android:foregroundServiceType="location" />
+111-->[:geolocator_android] D:\andriod studio project\CivicAlerts\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-53
+112
+113        <activity
+113-->[:url_launcher_android] D:\andriod studio project\CivicAlerts\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-11:74
+114            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+114-->[:url_launcher_android] D:\andriod studio project\CivicAlerts\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-74
+115            android:exported="false"
+115-->[:url_launcher_android] D:\andriod studio project\CivicAlerts\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-37
+116            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" /> <!-- Needs to be explicitly declared on P+ -->
+116-->[:url_launcher_android] D:\andriod studio project\CivicAlerts\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-71
+117        <uses-library
+117-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\cheta\.gradle\caches\transforms-3\8bbca67cc5a32c5ad0e6edc351921bed\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+118            android:name="org.apache.http.legacy"
+118-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\cheta\.gradle\caches\transforms-3\8bbca67cc5a32c5ad0e6edc351921bed\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+119            android:required="false" />
+119-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\cheta\.gradle\caches\transforms-3\8bbca67cc5a32c5ad0e6edc351921bed\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+120
+121        <activity
+121-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\cheta\.gradle\caches\transforms-3\bb9d59e21b7884666623ba570b979574\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+122            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+122-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\cheta\.gradle\caches\transforms-3\bb9d59e21b7884666623ba570b979574\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+123            android:exported="false"
+123-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\cheta\.gradle\caches\transforms-3\bb9d59e21b7884666623ba570b979574\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+124            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+124-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\cheta\.gradle\caches\transforms-3\bb9d59e21b7884666623ba570b979574\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+125
+126        <meta-data
+126-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\cheta\.gradle\caches\transforms-3\96004e15647bc525170b7742251f128d\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+127            android:name="com.google.android.gms.version"
+127-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\cheta\.gradle\caches\transforms-3\96004e15647bc525170b7742251f128d\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+128            android:value="@integer/google_play_services_version" />
+128-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\cheta\.gradle\caches\transforms-3\96004e15647bc525170b7742251f128d\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+129
+130        <uses-library
+130-->[androidx.window:window:1.2.0] C:\Users\cheta\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+131            android:name="androidx.window.extensions"
+131-->[androidx.window:window:1.2.0] C:\Users\cheta\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+132            android:required="false" />
+132-->[androidx.window:window:1.2.0] C:\Users\cheta\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+133        <uses-library
+133-->[androidx.window:window:1.2.0] C:\Users\cheta\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+134            android:name="androidx.window.sidecar"
+134-->[androidx.window:window:1.2.0] C:\Users\cheta\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+135            android:required="false" />
+135-->[androidx.window:window:1.2.0] C:\Users\cheta\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+136
+137        <provider
+137-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\cheta\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+138            android:name="androidx.startup.InitializationProvider"
+138-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\cheta\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+139            android:authorities="com.wight.civicalerts.androidx-startup"
+139-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\cheta\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+140            android:exported="false" >
+140-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\cheta\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+141            <meta-data
+141-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\cheta\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+142                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+142-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\cheta\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+143                android:value="androidx.startup" />
+143-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\cheta\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+144            <meta-data
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+145                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+146                android:value="androidx.startup" />
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+147        </provider>
+148
+149        <receiver
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+150            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+151            android:directBootAware="false"
+151-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+152            android:enabled="true"
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+153            android:exported="true"
+153-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+154            android:permission="android.permission.DUMP" >
+154-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+155            <intent-filter>
+155-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+156                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+156-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+156-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+157            </intent-filter>
+158            <intent-filter>
+158-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+159                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+159-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+159-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+160            </intent-filter>
+161            <intent-filter>
+161-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+162                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+162-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+162-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+163            </intent-filter>
+164            <intent-filter>
+164-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+165                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+165-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+165-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\cheta\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+166            </intent-filter>
+167        </receiver>
+168    </application>
+169
+170</manifest>
